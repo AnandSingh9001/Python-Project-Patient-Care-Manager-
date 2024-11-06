@@ -9,7 +9,7 @@ import mysql.connector
 class Hospital:
     def __init__(self, root):
         self.root = root
-        self.root.title("Hospital Management System")
+        self.root.title("Patient Care Manager")
         self.root.geometry("1540x800+0+0")
 
         self.Name_of_tablets=StringVar()
@@ -32,7 +32,7 @@ class Hospital:
         self.DateOfBirth=StringVar()
         self.patientaddress=StringVar()
 
-        lbltitle = Label(self.root, bd=20, relief=RIDGE, text="HOSPITAL MANAGEMENT SYSTEM", fg="red", bg="white", font=("times new roman", 50, "bold"))
+        lbltitle = Label(self.root, bd=20, relief=RIDGE, text="Patient Care Manager", fg="red", bg="white", font=("times new roman", 50, "bold"))
         lbltitle.pack(side=TOP, fill=X)
         
         # ==============================data frame=====================================
